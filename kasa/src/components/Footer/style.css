@@ -1,0 +1,23 @@
+.footerContainer {
+    width: 100%;
+    background-color: black;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+
+.footerContainer h2 {
+    margin: 0;
+    color: white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+.footerContainer img {
+    width: 120px;
+}
