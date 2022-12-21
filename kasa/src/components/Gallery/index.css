@@ -1,0 +1,9 @@
+.galleryContainer {
+    width: 1240px;
+    height: 100vh;
+    margin: auto;
+    display: flex;  
+    text-align: center;
+    background-color: #F7F7F7;    
+    border-radius: 25px;
+}

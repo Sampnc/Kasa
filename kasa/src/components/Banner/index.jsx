@@ -1,9 +1,11 @@
 import "./index.css";
 
-export default function Banner () {
+export default function Banner (props) {
+    console.log(props);
     return (
         <div className="bannerContainer">
-            <img src="bgd_cliff.png" alt="panoramique sur des falaises en bord de mer" />
+            <img src={props.background} alt="Paysage" />
+            {props.title && (<h1>{props.title}</h1>)}
         </div>
     );
 };

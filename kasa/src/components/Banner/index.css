@@ -1,4 +1,9 @@
 .bannerContainer img {
     width: 1240px;
+    margin: auto;
+    display: flex;  
+    text-align: center;    
+    border-radius: 25px;
+    filter: contrast(50%);
 }
 

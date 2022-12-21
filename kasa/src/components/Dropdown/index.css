@@ -1,0 +1,53 @@
+.dropdownContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.dropdownTitle {
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16pt;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+.dropdownTitle h3 {
+    margin-left: 25px;
+}
+
+.dropdownTitle button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-right: 25px;
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+.dropdownDescription {
+    background: #F7F7F7;
+    border-radius: 5px;
+}
+
+.dropdownDescription p {
+    margin: 0px;
+    padding: 16pt;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18pt;
+    text-align: start;
+    line-height: 142.6%;
+}

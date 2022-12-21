@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from "react";
+import background from "../assets/images/background_2.png"
 
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
@@ -13,11 +14,11 @@ export default function About () {
     },[])
     
     return (
-        <div>
-            <Banner />
+        <div className="aboutContainer">
+            <Banner background={background}/>
             <div>
                 {aboutList.map((element) => (
-                <Dropdown key={element.title} props={element}/>
+                <Dropdown key={element.title} data={element}/>
                 ))}
             </div>     
         </div>
