@@ -3,8 +3,8 @@ import "./index.css";
 export default function Tag({ tag }) {
  // console.log(tags)
   return (
-    <div className="tag">
+    <li className="tag">
       <p>{tag}</p>
-    </div>
+    </li>
   );
 }
