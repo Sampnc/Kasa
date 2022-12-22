@@ -1,4 +1,4 @@
-import "../styles/tag.css";
+import "./index.css";
 
 export default function Tag({ tag }) {
  // console.log(tags)

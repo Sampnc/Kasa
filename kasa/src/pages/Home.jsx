@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
-import Card from "../components/Card";
 import background from "../assets/images/background_1.png"
 
 
