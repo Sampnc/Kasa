@@ -2,13 +2,12 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 export default function Card ({ data }) {
-    //console?.log(data.cover)
-    
+    //console.log(data.cover)
     return (
         <div className="cardContainer">
-            <Link to={`/logement/{data.logement.id}`}>
+            <Link to={`/logement/${data.id}`}>
                 <img src={data.cover} alt="" />
-                <h3>hefj</h3>
+                <h3>{data.title}</h3>
             </Link>
         </div>
     );

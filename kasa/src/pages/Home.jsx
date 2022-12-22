@@ -19,15 +19,10 @@ export default function Home () {
         <div>
             <Banner title={"Chez vous, partout et ailleurs"} background={background}/>
             <div>
-                <Gallery />
+                <Gallery galleryLogement={logementsList}/>
             </div>
             <div className="logementCard">
-                <ul>
-                    {logementsList.map((logement) => (
-                    <li key={logement.id}><Card data={logement}/></li>)
-                    )}
-                </ul>
-                <Card />
+                
             </div>
         </div>
     );
