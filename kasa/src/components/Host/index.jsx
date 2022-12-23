@@ -1,13 +1,20 @@
 import "./index.css";
+import React, { useState, useEffect } from "react";
 
 export default function Host ({ host }) {
+  const [dataHost, setDataHost] = useState({})
 
-    console.log(host)
+  useEffect(() => {
+    if (host) {
+      setDataHost(host)
+    }
+  })
+    //console.log(dataHost.name)
 
     return (
         <div className="hostContainer">
-          <h3>{host.name}</h3>
-          <img src={host.picture} alt={host.name} />
+          <h3>{dataHost.name}</h3>
+          <img src={dataHost.picture} alt={dataHost.name} />
         </div>
     );
 };

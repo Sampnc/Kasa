@@ -7,13 +7,25 @@ export default function Dropdown (props) {
     return (
         <div className="dropdownContainer">
             <div className="dropdownTitle">
-                <h3>{props.data.title}</h3>
+                <h3>{props.title}</h3>
                 <button style={
                     isOpen ? {transform: "rotate(180deg)"}: {transform: "rotate(0deg)"}
                 } onClick={() => setIsOpen(!isOpen)}><i className="fa-sharp fa-solid fa-chevron-down"></i></button>
                 </div>
             {isOpen && (<div className="dropdownDescription">
-                <p>{props.data.description}</p>
+                {Array.isArray(props.description)? (
+                <ul className="equipementList">
+                    {props.content.map((e) => (
+                        <li>{e}</li>
+                    )
+                    ) }
+                    
+                </ul>
+                ):(
+                <p>{props.content}</p>
+                )}
+                
+
             </div>)}
         </div>
     );

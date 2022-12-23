@@ -1,9 +1,16 @@
 .galleryContainer {
     width: 1240px;
-    height: 100vh;
     margin: auto;
-    display: flex;  
     text-align: center;
     background-color: #F7F7F7;    
     border-radius: 25px;
+}
+
+.galleryContainer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+    margin: 0;
+    padding: 20px;
 }

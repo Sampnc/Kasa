@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
+import Rating from "../components/Rating";
+import Dropdown from "../components/Dropdown";
 
 export default function Logement () {
     console.log(useParams())
@@ -36,12 +38,15 @@ export default function Logement () {
                     </ul>
                 </div>
                 <div className="hostProfile">
+                    <Rating rating={logement.rating} />
                     <Host host={logement.host} />
-                </div>                
+                </div>              
             </div>
-            {/* <div className="dropdown">
-                    <Dropdown title={"Description"} content={logement.description} />
-                </div> */}
+            <div className="dropdown">
+                <Dropdown title={"Description"} content={logement.description} />
+                <Dropdown title={"Équipements"} content={logement.equipments} />
+            </div>
+            
         </div>
     );
 };

@@ -1,3 +1,10 @@
+.bannerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .bannerContainer img {
     width: 1240px;
     margin: auto;
@@ -5,5 +12,12 @@
     text-align: center;    
     border-radius: 25px;
     filter: contrast(50%);
+    
 }
 
+.bannerContainer h1 {
+    color: white;
+    font-size: 36pt;
+    position: absolute;
+
+}

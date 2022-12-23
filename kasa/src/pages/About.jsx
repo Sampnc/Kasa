@@ -18,7 +18,7 @@ export default function About () {
             <Banner background={background}/>
             <div>
                 {aboutList.map((element) => (
-                <Dropdown key={element.title} data={element}/>
+                <Dropdown key={element.title} title={element.title} content={element.description}/>
                 ))}
             </div>     
         </div>
