@@ -1,0 +1,19 @@
+.tag {
+    max-height: 30px;
+    min-height: 15px;
+    max-width: 115px;
+    background-color: #ff6060;
+    border-radius: 15px;
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+}
+
+.tag p {
+   color: white;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 11pt;
+   padding: 5px;
+   margin: 0;
+}

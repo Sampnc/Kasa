@@ -32,8 +32,8 @@ export default function Slideshow({ slides }) {
         })}
         
         {slides?.length > 1 ? (
-          <>
-          <div className="slideshowContainer"></div>
+          <div className="slideshowContainer">
+          <div className="sliderContent"></div>
             <button className="slider__previous" onClick={prevSlide}>
                 <i className="fa-solid fa-chevron-left"></i>
             </button>
@@ -42,7 +42,7 @@ export default function Slideshow({ slides }) {
             <button className="slider__next" onClick={nextSlide}>
                 <i className="fa-solid fa-chevron-right"></i>
             </button>
-          </>
+          </div>
         ) : null}
       </div>
     );

@@ -3,7 +3,8 @@ import React, {useState} from "react";
 
 export default function Dropdown (props) {
     const [isOpen, setIsOpen] = useState(false)
-    console.log(props)
+    // console.log(props)
+
     return (
         <div className="dropdownContainer">
             <div className="dropdownTitle">
@@ -11,21 +12,18 @@ export default function Dropdown (props) {
                 <button style={
                     isOpen ? {transform: "rotate(180deg)"}: {transform: "rotate(0deg)"}
                 } onClick={() => setIsOpen(!isOpen)}><i className="fa-sharp fa-solid fa-chevron-down"></i></button>
-                </div>
+            </div>
             {isOpen && (<div className="dropdownDescription">
-                {Array.isArray(props.description)? (
+                {Array.isArray(props.content)? (
                 <ul className="equipementList">
-                    {props.content.map((e) => (
-                        <li>{e}</li>
+                    {props.content.map((e,i) => (
+                        <li key={i}>{e}</li>
                     )
-                    ) }
-                    
+                    )}                    
                 </ul>
                 ):(
                 <p>{props.content}</p>
-                )}
-                
-
+                )}             
             </div>)}
         </div>
     );

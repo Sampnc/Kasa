@@ -1,0 +1,23 @@
+/* .slideshowContainer {
+    width: 1240px;
+    margin: auto;
+} */
+
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1240px;
+}
+
+.slider__active-picture {
+    height: 255px;
+    width: 100%;
+}
+
+.slider__picture {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 10px;
+}

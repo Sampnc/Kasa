@@ -2,10 +2,29 @@
 .cardContainer {
     max-width: 340px;
     max-height: 340px;
-    /* min-width: 330px; */
+    min-width: 335px;
+    min-height: 255px;
     border-radius: 10px;
     position: relative;
     margin: 0;
+}
+
+@media only screen and (max-width: 830px) {
+    .cardContainer { 
+        width: 335px;
+        height: 255px;
+    }
+    .cardContainer img{ 
+        width: 335px;
+        height: 255px;
+        object-fit: cover;
+    }
+
+    .logementTitle {
+        width: 355px;
+        height: 255px;
+    }
+
 }
 
 .cardContainer img {

@@ -22,14 +22,14 @@ export default function Logement () {
                 
             })      
     },[id])
-    console.log(logement.tags) 
+    // console.log(logement.tags) 
     return (
         <div>
             <div>
             <Slideshow slides={logement.pictures} />
             </div>
             <div className="logementPlug">
-                <div className="LogementInfos">
+                <div className="logementInfos">
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
                 </div>
