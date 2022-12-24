@@ -20,9 +20,9 @@ export default function Home () {
             <div>
                 <Gallery galleryLogement={logementsList}/>
             </div>
-            <div className="logementCard">
+            {/* <div className="logementCard">
                 
-            </div>
+            </div> */}
         </div>
     );
 };

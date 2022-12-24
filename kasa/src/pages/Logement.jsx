@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Slideshow from "../components/Slideshow";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
 import Rating from "../components/Rating";
@@ -24,6 +25,9 @@ export default function Logement () {
     console.log(logement.tags) 
     return (
         <div>
+            <div>
+            <Slideshow slides={logement.pictures} />
+            </div>
             <div className="logementPlug">
                 <div className="LogementInfos">
                     <h1>{logement.title}</h1>
