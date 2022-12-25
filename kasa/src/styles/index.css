@@ -63,6 +63,13 @@ li {
 
 /* LogementPage */
 
+.logementContainer {
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    flex-grow: 1;
+}
+
 .logementInfos h1 {
   font-size: 27pt;
   margin-bottom: 10px;
@@ -71,4 +78,23 @@ li {
 .logementInfos p {
   font-size: 14pt;
   margin-top: 0;
+}
+
+.dropdownBlock {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dropdown {
+  width: 100%;
+  max-width: 582px;
+  min-width: 335px
+}
+
+.tagContainer {
+  display: flex;
 }

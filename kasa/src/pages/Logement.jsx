@@ -24,7 +24,7 @@ export default function Logement () {
     },[id])
     // console.log(logement.tags) 
     return (
-        <div>
+        <div className="logementContainer">
             <div>
             <Slideshow slides={logement.pictures} />
             </div>
@@ -42,13 +42,18 @@ export default function Logement () {
                     </ul>
                 </div>
                 <div className="hostProfile">
-                    <Rating rating={logement.rating} />
                     <Host host={logement.host} />
+                    <Rating rating={logement.rating} />
+                    
                 </div>              
             </div>
-            <div className="dropdown">
-                <Dropdown title={"Description"} content={logement.description} />
-                <Dropdown title={"Équipements"} content={logement.equipments} />
+            <div className="dropdownBlock">
+                <div className="dropdown">
+                    <Dropdown title={"Description"} content={logement.description} />
+                </div> 
+                <div className="dropdown">   
+                    <Dropdown title={"Équipements"} content={logement.equipments} />
+                </div>
             </div>
             
         </div>

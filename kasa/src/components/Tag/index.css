@@ -1,7 +1,6 @@
 .tag {
     max-height: 30px;
     min-height: 15px;
-    max-width: 115px;
     background-color: #ff6060;
     border-radius: 15px;
     padding: 2px;
@@ -12,8 +11,9 @@
 .tag p {
    color: white;
    font-style: normal;
+   line-height: 142.6%;
    font-weight: 500;
    font-size: 11pt;
-   padding: 5px;
+   padding: 3px 15px;
    margin: 0;
 }
