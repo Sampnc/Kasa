@@ -25,22 +25,18 @@ export default function Logement () {
     // console.log(logement.tags) 
     return (
         <div className="logementContainer">
-            <div>
             <Slideshow slides={logement.pictures} />
-            </div>
-            <div className="logementPlug">
+            <div className="logementPlug">                
                 <div className="logementInfos">
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
-                </div>
-                <div className="tagContainer">
                     {/* Le ? dit que si ça existe tu l'affiches */}
                     <ul className="tagCategory">
                         {logement?.tags?.map((tag) => (
                         <Tag key={tag} tag={tag} />
                         ))}
                     </ul>
-                </div>
+                </div>                    
                 <div className="hostProfile">
                     <Host host={logement.host} />
                     <Rating rating={logement.rating} />

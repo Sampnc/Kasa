@@ -1,4 +1,4 @@
-
+import "./index.css";
 import React, { useState } from "react";
 
 export default function Slideshow({ slides }) {
@@ -33,16 +33,15 @@ export default function Slideshow({ slides }) {
         
         {slides?.length > 1 ? (
           <div className="slideshowContainer">
-          <div className="sliderContent"></div>
-            <button className="slider__previous" onClick={prevSlide}>
-                <i className="fa-solid fa-chevron-left"></i>
-            </button>
-            <img src={"picture"} alt="" />
-            <span className="counter">{current + 1}/{slides?.length}</span>
-            <button className="slider__next" onClick={nextSlide}>
-                <i className="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+              <button className="slider__previous" onClick={prevSlide}>
+                  <i className="fa-solid fa-chevron-left"></i>
+              </button>
+              <img src={"picture"} alt="" />
+              <span className="counter">{current + 1}/{slides?.length}</span>
+              <button className="slider__next" onClick={nextSlide}>
+                  <i className="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
         ) : null}
       </div>
     );

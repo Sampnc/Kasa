@@ -70,14 +70,28 @@ li {
     flex-grow: 1;
 }
 
+.logementPlug {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .logementInfos h1 {
   font-size: 27pt;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
 .logementInfos p {
   font-size: 14pt;
   margin-top: 0;
+}
+
+.hostProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .dropdownBlock {
@@ -89,12 +103,24 @@ li {
   align-items: flex-start;
 }
 
+@media only screen and (max-width: 1170px) {
+  .dropdownBlock {
+    justify-content: space-around;
+  }
+}
+
 .dropdown {
   width: 100%;
   max-width: 582px;
   min-width: 335px
 }
 
-.tagContainer {
+
+
+.tagCategory {
   display: flex;
+}
+
+.tagCategory {
+  padding: 0px;
 }
