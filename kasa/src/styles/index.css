@@ -46,6 +46,19 @@ li {
 
 .errorContainer p {
   font-size: 27pt;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 750px) {
+  .errorContainer h1 {
+    font-size: 100pt;
+    margin-top: 100px;
+  }
+
+  .errorContainer p {
+    font-size: 20pt;
+    margin-bottom: 100px;
+  }
 }
 
 .errorContainer a {
@@ -53,6 +66,23 @@ li {
   font-weight: 500;
   font-size: 18px;
   text-decoration: underline;
+  padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .errorContainer h1 {
+    font-size: 76pt;
+  }
+
+  .errorContainer p {
+    font-size: 14pt;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .errorContainer a {
+    font-size: 12pt;
+  }
 }
 
 /* AboutPage */
@@ -67,6 +97,7 @@ li {
     width: 100%;
     max-width: 1240px;
     margin: auto;
+    margin-bottom: 50px;
     flex-grow: 1;
 }
 
@@ -83,6 +114,12 @@ li {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .logementInfos h1 {
+    font-size: 20pt;
+  }
+}
+
 .logementInfos p {
   font-size: 14pt;
   margin-top: 0;
@@ -92,6 +129,17 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .hostProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .dropdownBlock {
@@ -114,8 +162,6 @@ li {
   max-width: 582px;
   min-width: 335px
 }
-
-
 
 .tagCategory {
   display: flex;

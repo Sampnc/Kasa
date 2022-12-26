@@ -9,6 +9,12 @@
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 500px) {
+    .slider__active-picture img {
+      height: 255px;      
+    }
+}
+
 .slider__active-picture {
     width: inherit;
     height: inherit;

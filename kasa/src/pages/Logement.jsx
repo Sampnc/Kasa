@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ErrorPage from "../pages/ErrorPage";
 import Slideshow from "../components/Slideshow";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
@@ -22,7 +23,11 @@ export default function Logement () {
                 
             })      
     },[id])
-    // console.log(logement.tags) 
+    // console.log(logement.tags)
+    
+    if (!logement) {
+        return (<ErrorPage />)        
+    }
     return (
         <div className="logementContainer">
             <Slideshow slides={logement.pictures} />

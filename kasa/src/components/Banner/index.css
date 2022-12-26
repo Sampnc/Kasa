@@ -14,7 +14,7 @@
     display: flex;  
     text-align: center;    
     border-radius: 25px;
-    filter: contrast(50%);
+    filter: contrast(60%);
     
 }
 
@@ -23,4 +23,46 @@
     font-size: 36pt;
     position: absolute;
 
+}
+
+.bannerContainer h1 {
+    color: white;
+    font-size: 36pt;
+    position: absolute;
+
+}
+
+@media only screen and (max-width: 839px) {
+    .bannerContainer img {
+        height: 110px;
+        border-radius: 10px;
+        object-fit: none;
+}
+
+    .bannerContainer h1 {
+        font-size: 25pt;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bannerContainer {
+        justify-content: flex-start;
+        line-height: 100%;
+    }
+
+    .bannerContainer h1 {
+        font-size: 20pt;
+        padding-left: 30px;
+        padding-right: 250px;
+        line-height: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .bannerContainer h1 {
+        padding-right: 100px;
+        line-height: 100%;
+    }
 }
